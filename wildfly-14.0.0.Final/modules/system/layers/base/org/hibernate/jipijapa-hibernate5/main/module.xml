@@ -20,14 +20,13 @@
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
-<module name="org.hibernate.jipijapa-hibernate5" xmlns="urn:jboss:module:1.7">
+<module name="org.hibernate.jipijapa-hibernate5" xmlns="urn:jboss:module:1.5">
     <properties>
         <property name="jboss.api" value="private"/>
     </properties>
 
     <resources>
-        <resource-root path="jipijapa-hibernate5-14.0.0.Final.jar"/>
-        <resource-root path="jipijapa-hibernate5-legacy-14.0.0.Final.jar"/>
+        <resource-root path="jipijapa-hibernate5-12.0.0.Final.jar"/>
     </resources>
 
     <dependencies>

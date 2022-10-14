@@ -20,11 +20,13 @@
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
-<!-- Represents Hibernate 5.1.x, will later become 5.3.x for WF 14  -->
-<module name="org.hibernate" xmlns="urn:jboss:module:1.7">
+<!-- Represents the Hibernate 5.0.x module-->
+<module name="org.hibernate" xmlns="urn:jboss:module:1.5">
     <resources>
-        <resource-root path="hibernate-core-5.3.6.Final.jar"/>
-        <resource-root path="hibernate-envers-5.3.6.Final.jar"/> 
+        <resource-root path="hibernate-core-5.2.8.Final.jar"/>
+        <resource-root path="hibernate-envers-5.1.10.Final.jar"/>
+        <resource-root path="hibernate-entitymanager-5.2.1.Final.jar"/>
+        <resource-root path="hibernate-java8-5.1.10.Final.jar"/>
     </resources>
 
     <dependencies>
@@ -44,9 +46,7 @@
         <module name="org.jboss.logging"/>
         <module name="org.jboss.vfs"/>
         <module name="org.hibernate.commons-annotations"/>
-        <module name="org.hibernate.jipijapa-hibernate5-3" services="import"/>
+        <module name="org.hibernate.jipijapa-hibernate5" services="import"/>
         <module name="org.infinispan.hibernate-cache" services="import" optional="true"/>
-        <module name="net.bytebuddy"/>
-        <module name="asm.asm"/>
     </dependencies>
 </module>
